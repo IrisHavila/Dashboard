@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="style/d2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section>
+	<div class="sidebar">
+		<h3 class="logo">eProduct</h3>
+
+		<ul class="nav">
+			<li><a href="#"><i class="fa fa-windows"></i> <strong>Dashboard</strong></a></li>
+			<li class="active"><a href="#"><i class="fa fa-shopping-bag"></i> <strong>Order</strong></a></li>
+			<li><a href="#"><i class="fa fa-pie-chart"></i> <strong>Statistic</strong></a></li>
+			<li><a href="#"><i class="fa fa-cube"></i> <strong>Product</strong></a></li>
+			<li><a href="#"><i class="fa fa-database"></i> <strong>Stock</strong></a></li>
+			<li><a href="#"><i class="fa fa-tag"></i> <strong>Offer</strong></a></li>
+
+		</ul>
+
+			<ul class="social">
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Google</a></li>
+			</ul>
+		
+
+	</div>
+	<div class="main">
+		
+		<div class="head-section">
+			<div class="col-6">
+				<h2>Overview</h2>
+			</div>
+
+			<div class="col-6" style="text-align: right;">
+				
+				
+                
+                <i class="fa fa-bell-o hicon"></i>
+                <input type="text" class="search">
+                <i class="fa fa-search hicon sicon"></i>
+				
+
+				<img src="image/profil_d.png" class="user">
+
+				<div class="profile-div">
+					<p><i class="fa fa-user"></i>   Profile</p>
+					<p><i class="fa fa-cog"></i>   Settings</p>
+					<p><i class="fa fa-power-off"></i>   Log Out</p>
+				</div>
+
+		       <div class="notification-div">
+			       <p>Success!Your registration is now complete!</p>
+			       <p>Here's some information you may find useful!</p>			
+		      </div>
+         </div>
+
+			<div class="clearfix"></div>
+		</div>
+		<div class="content">
+			<div class="graphe">
+                <p><h3>Portfolio</h3></p>
+                <div class="box1">
+                    <p class="price"><strong>$ 17 643.41</strong> <i class="fa fa-ellipsis-v"></i></p>
+                    <p class="price1">Portfolio balance</p>
+                </div>
+            </div>
+           <div class="assets">
+            <p><h3>Your Assets</h3></p>
+            <div class="btc">
+                <div class="box2">
+                    <p class="price"><strong>1.25 BTC</strong> <i class="fa fa-ellipsis-v"></i></p>
+                    <p class="price1">$ 2948,04</p>
+                    <br><br>
+                    <div class="ctn"><div class="font"><i class="fa fa-bitcoin"></i></div> <p class="percent"><strong>+ 0.14%</strong></p></div>
+                </div>
+            </div>
+            <div class="ltc">
+                <div class="box3">
+                    <p class="price"><strong>0.32 LTC</strong> <i class="fa fa-ellipsis-v"></i></p>
+                    <p class="price1">$ 2948,04</p>
+                    <br><br>
+                    <div class="ctn"><div class="font"><i class="fa fa-yen"></i></div> <p class="percent"><strong>+ 0.31%</strong></p></div>
+                </div>
+            </div>
+            <div class="eth">
+                <div class="box4">
+                    <p class="price"><strong>1.25 ETH</strong> <i class="fa fa-ellipsis-v"></i></p>
+                    <p class="price1">$ 2948,04</p>
+                    <br><br>
+                    <div class="ctn"><div class="font"><i class="fa fa-gbp"></i></div> <p class="percent"><strong>+ 0.27%</strong></p></div>
+                </div>
+            </div>
+            
+           </div>
+            <div class="clearfix"></div>
+            <br/><br>
+            <div class="market">
+                <div class="box5">
+                    <p><h3>Market is down 0.80%</h3></p>
+                </div>
+            </div>
+            <div class="pub">
+                
+                <div class="box6">
+                    
+                </div>
+            </div>
+		</div>
+,       
+
+
+	</div>
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $(".user").click(function(){
+    $(".profile-div").toggle(1000);
+  });
+  $(".hicon:nth-child(1)").click(function(){
+    $(".notification-div").toggle(1000);
+  });
+  $(".sicon").click(function(){
+    $(".search").toggle(1000);
+  });
+});
+</script>
+
+<script type="text/javascript">
+	$('li').click(function(){
+    $('li').removeClass("active");
+    $(this).addClass("active");
+});
+
+
+
+	
+</script>
+</body>
+</html>
